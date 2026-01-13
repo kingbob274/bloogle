@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloogle Search</title>
+    <link rel="icon" type="image/png" href="b.png">
+
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            display: inline-block;
+        }
+        .search-box {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4285F4;
+            color: white;
+            border-radius: 25px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-button:hover {
+            background-color: Black;
+        }
+        .quick-links {
+            margin-top: 30px;
+        }
+        /* Style the anchor tags to look like buttons */
+        .quick-links a {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+        .quick-links a:hover {
+            background-color: #e0e0e0;
+            text-decoration: none;
+        }
+        /* Style for the top right "Login" button */
+        .top-right-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .top-right-link a {
+            display: inline-block; 
+            /* CHANGE: Set background color to black */
+            background-color: black; 
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px; 
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .top-right-link a:hover {
+            /* CHANGE: Set hover background color to a lighter color */
+            background-color: #555555; /* A dark gray */
+            text-decoration: none; 
+        }
+        /* New styling for the Google logo inside the button */
+        .top-right-link a img {
+            height: 18px; 
+            vertical-align: middle; 
+            margin-right: 8px; 
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Bloogle Search</h1>
+    <p>Search the entire web!</p>
+
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Enter your search term..." class="search-box">
+        <button type="submit" class="search-button">Search Bloogle</button>
+    </form>
+
+    <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://app.myflexlearning.com/login" target="_blank">My Flex</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://classroom.google.com/h" target="_blank">Google Classroom</a>
+    </div>
+
+</body>
+</html>
